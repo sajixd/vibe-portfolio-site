@@ -1,0 +1,24 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://api.fontshare.com/v2/css?f[]=synonym@400&f[]=amulya@700&display=swap" rel="stylesheet">
+    <slot name="head" />
+    <title>Sajid Ahmed — Portfolio</title>
+  </head>
+  <body>
+    <div class="site">
+      <Header />
+      <main class="container">
+        <slot />
+      </main>
+      <Footer />
+    </div>
+  </body>
+</html>

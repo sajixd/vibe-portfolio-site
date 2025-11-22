@@ -1,0 +1,9 @@
+name = "vibe-portfolio-site"
+compatibility_date = "2025-11-22"
+main = "workers-site/index.js"
+
+[site]
+bucket = "dist"
+
+# Leave routes unset so Cloudflare Pages decides routing automatically
+# If you need custom routes, add them under [[routes]]
